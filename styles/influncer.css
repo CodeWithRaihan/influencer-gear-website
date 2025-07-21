@@ -144,7 +144,30 @@
     margin: 0;
     color: rgba(120, 120, 133, 1);
 }
-
+/* Featured products styles */
+.Featured-products{
+     max-width: 1110px;
+     margin: 0 auto;
+}
+.featured-container{
+    display: flex;
+    gap:90px;
+}
+.box-title{
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+.box-description{
+    font-weight: bold;
+    font-size: 1rem;
+    color:rgba(108, 108, 108, 1) ;
+}
+#btn-primary{
+    border-radius: 0;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
 
 
 
@@ -161,10 +184,17 @@
     .navbar,.navitems{
         flex-direction: column;
     }
-    .banner-container{
+    .banner-container,
+    .featured-container
+    {
         flex-direction: column-reverse;
         gap: 0;
        
+    }
+    .box-2{
+        margin-bottom: 20px;
+        text-align: center;
+        
     }
     .banner-text{
           margin-top: 15px;
@@ -191,6 +221,7 @@
     .card{
         margin: 0 auto; 
     }
+    
 }
 /* responsive for medium devices */
     @media screen and (min-width:577px) and (max-width:992px) {
