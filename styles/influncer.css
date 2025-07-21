@@ -8,6 +8,14 @@
   font-weight: 400;
   font-style: normal;
 }
+/* shared styles */
+.btn-primary{
+     background-color: rgba(224, 44, 109, 1);
+     color: white;
+     border-radius: 41px;
+     padding: 10px 24px;
+   
+}
 /* header styles */
  .header{
     max-width: 1140px;
@@ -39,3 +47,76 @@
     font-weight: bold;
     font-size: 1.5rem;
 }
+/* banner related styles */
+.banner-container{
+    display: flex;
+    gap: 130px;
+    margin-top: 50px;
+}
+/* part-1 banner text */
+.banner-text{
+    max-width: 580px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 3.25rem;
+}
+.banner-description{
+    font-weight: 600;
+    font-size: 1rem;
+}
+/* part-2 banner images */
+.cam-bg-img{
+     position: relative;
+}
+.cam-img{
+    position: absolute;
+     top: 30px;
+     left: 20px; 
+}
+#img{
+    width: 100%;
+}
+
+/* temporary */
+.display-hidden{
+   display: none;
+}
+
+
+
+
+
+/* responsive for small devices */
+
+@media screen and (max-width:576px) {
+
+    .navbar,.navitems{
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 0;
+       
+    }
+    .banner-text{
+          margin-top: 15px;
+          text-align: center;
+    }
+    .banner-description{
+          margin-top: 15px;
+    }
+    .banner-images{
+        margin: 0px 50px;
+
+    }
+}
+/* responsive for meadum devices */
+    @media screen and (min-width:577px) and (max-width:768px) {
+          .header{
+            margin: 0 auto;
+          }
+          .banner-container{
+            gap: 20px;
+          }
+    }
