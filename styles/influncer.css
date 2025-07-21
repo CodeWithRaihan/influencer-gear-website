@@ -13,7 +13,7 @@
      background-color: rgba(224, 44, 109, 1);
      color: white;
      border-radius: 41px;
-     padding: 10px 24px;
+     padding: 10px 50px 10px 24px 
    
 }
 /* header styles */
@@ -77,6 +77,22 @@
 #img{
     width: 100%;
 }
+/* part-3 logo container */
+  .logos{
+     margin-top: 50px;
+  }
+ 
+  .logo-contianer{
+    border: 1px solid black;
+    max-width: 1110px;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+
 
 /* temporary */
 .display-hidden{
@@ -102,6 +118,7 @@
     .banner-text{
           margin-top: 15px;
           text-align: center;
+          align-items: center;
     }
     .banner-description{
           margin-top: 15px;
@@ -110,13 +127,25 @@
         margin: 0px 50px;
 
     }
+    .logo-contianer{
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 50px;
+        padding: 0;
+    }
 }
-/* responsive for meadum devices */
-    @media screen and (min-width:577px) and (max-width:768px) {
+/* responsive for medium devices */
+    @media screen and (min-width:577px) and (max-width:992px) {
           .header{
             margin: 0 auto;
           }
           .banner-container{
             gap: 20px;
+          }
+           .logo-contianer{
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+            padding: 0;
           }
     }
